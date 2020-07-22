@@ -4,6 +4,18 @@ test('name = Anna_193--anna', () => {
     expect(validator.validateUsername('Anna_193--anna')).toBe('Имя Anna_193--anna соответсвует требованием');
 });
 
+test('name = AL', () => {
+    expect(validator.validateUsername('AL')).toBe('Имя AL соответсвует требованием');
+});
+
+test('name = R0b0t', () => {
+    expect(validator.validateUsername('R0b0t')).toBe('Имя R0b0t соответсвует требованием');
+});
+
+test('name = OBI-1C', () => {
+    expect(validator.validateUsername('OBI-1C')).toBe('Имя OBI-1C соответсвует требованием');
+});
+
 test('name = Anna_19--anna', () => {
     expect(validator.validateUsername('Anna_19--anna')).toBe('Имя Anna_19--anna соответсвует требованием');
 });
@@ -20,7 +32,7 @@ test('name = Anna_anna', () => {
     expect(validator.validateUsername('Anna_anna')).toBe('Имя Anna_anna соответсвует требованием');
 });
 
-test('name =AnnaAanna', () => {
+test('name = AnnaAanna', () => {
     expect(validator.validateUsername('AnnaAanna')).toBe('Имя AnnaAanna соответсвует требованием');
 });
 
