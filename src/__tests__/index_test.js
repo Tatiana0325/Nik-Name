@@ -16,6 +16,10 @@ test('name = OBI-1C', () => {
     expect(validator.validateUsername('OBI-1C')).toBe('Имя OBI-1C соответсвует требованием');
 });
 
+test('name = ON1X', () => {
+    expect(validator.validateUsername('ON1X')).toBe('Имя ON1X соответсвует требованием');
+});
+
 test('name = Anna_19--anna', () => {
     expect(validator.validateUsername('Anna_19--anna')).toBe('Имя Anna_19--anna соответсвует требованием');
 });
